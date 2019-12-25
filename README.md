@@ -1,2 +1,2 @@
-# DutchDS.github.io
-Aukje's Github Webpage
+# arijpkema.github.io
+Aukje's Page
