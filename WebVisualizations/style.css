@@ -16,16 +16,14 @@ header {
   background: #333;
 }
 
-h2 {
 
+h2 {
   margin-left: 110px;
-  /* justify-content: center; */
   color: #efeee7;
   background-color: rgb(149, 180, 211);
   padding: 15px;
   font-size: 28px;
 }
-
 
 h3 {
   margin: 0;
@@ -39,6 +37,7 @@ h4 {
   color: #efeee7;
   background-color: rgb(149, 180, 211);
   padding: 15px;
+  font-size:18px;
 }
 
 h5 {
@@ -70,6 +69,10 @@ p {
 #pbox {
   margin: 20px;
   font-size: 16px;
+}
+
+#img_viz {
+  text-align: center;
 }
 
 /* ****************************************************************** */
@@ -111,24 +114,6 @@ p {
 /* Box settings: */
 /* ****************************************************************** */
 
-.box1 {
-  box-sizing: border-box;
-  float:left;
-  margin: 20px;
-  position: static;
-  width: 45%;
-  background: white;
-}
-
-.box2 {
-  box-sizing: border-box;
-  float: left;
-  margin: 20px;
-  position: static;
-  width: 45%;
-  background: white;
-}
-
 .box3 {
   display: flex;
   justify-content: center;
@@ -148,13 +133,16 @@ p {
 /* ****************************************************************** */
 
 @media (max-width: 500px) {
-  .box1 {
-    position: static;
-    width: 90%;
-  }
 
-  .box2 {
-    position: static;
-    float: left;
-    width: 90%;
-  }
+.navbar, 
+.navbar-expand-lg,
+.bg_medium,
+.navbar-light {
+  background-color: seagreen;
+}
+
+h3,
+h2 {
+  background-color: lightgreen;
+  color: black
+}
