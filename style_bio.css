@@ -16,6 +16,7 @@ body {
 
 header {
   background: #333;
+  height: 60px;
 }
 
 h1 {
@@ -93,5 +94,5 @@ a {
   background-color: red;
   height: 10px;
   position: static;
-  margin-top: -30px;
+  /* margin-top: -30px; */
 }
