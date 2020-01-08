@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <title>Latitude</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bootstrap Components</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+      </head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-medium">
+        <a class="navbar-brand" href="landing.html"><h2><strong>Latitude</strong></h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="viz1.html">Max Temperature</a>
+                <a class="dropdown-item" href="viz2.html">Humidity</a>
+                <a class="dropdown-item" href="viz3.html">Cloudiness</a>
+                <a class="dropdown-item" href="viz4.html">Wind Speed</a>
+            </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Start of the content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-s-12">
+              <section id="figure">
+                <br>
+                <h3>Summary: Latitude vs X</h3>
+                <br>
+                <img id="lat-image" src="assets/images/Lat_vs_Temp.png" width=60% alt="Latitude vs X">
+
+                <p id="pbox">The purpose of this project was to analyse how weather changes as you get close to the equator. To
+                accomplish this we first pulled data from 500 randomly chosen city around the world, using an OpenWeatherMap
+                API.
+                <br>
+                <br>
+                After assembling the dataset, we used MatPlotLib to plot various aspects of the weather latitute. Factors we
+                looked at were temperature, cloudiness, wind speed and humidity. This side provides the source data and
+                visualisations created as part of the analysis, as well as explanations and descriptions and any trend or
+                correlations witnessed </p>
+          </section>
+          </div>
+    
+          <div class="col-lg-5 col-s-12">
+            <br>
+            <h3>Visualizations</h3>
+            <br>
+
+                   <!-- ********************************************************************************************** -->
+        <!-- Grid within the grid -->
+        <!-- ********************************************************************************************** -->
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-3">
+              <a href="viz1.html">
+                <img width=100% src="assets/images/Lat_vs_Cloud.png" alt="...">
+              </a>
+          </div>
+
+          <div class="col-lg-6 col-xs-3">
+            <a href="viz2.html">
+              <img width=100% src="assets/images/Lat_vs_Humid.png" alt="...">
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-xs-3">
+            <a href="viz3.html">
+              <img width=100% src="assets/images/Lat_vs_Temp.png" alt="...">
+            </a>
+          </div>
+
+          <div class="col-lg-6 col-xs-3">
+            <a href="viz4.html">
+              <img width=100% src="assets/images/Lat_vs_Wind.png" alt="...">
+            </a>
+          </div>
+
+        </div>
+            </div>  
+          </div>
+      </div>
+
+    <div>
+        <div class = "box-set">
+         <figure class="box3">   
+        </div>
+        <footer>   
+          <p>© Copyright Aukje Rijpkema</p>
+        </footer>
+    </div>
+</body>
+</html>

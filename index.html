@@ -1,73 +1,87 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Aukje's HTML Bio</title>  
-  <link rel="stylesheet" type="text/css" href="style_bio.css">
-</head>
-
-<body>
-
-  <header><h1>Aukje Rijpkema - Bio</h1></header>
-  
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <img src="Profile Picture.jpg" alt="Aukje Vestjens-Rijpkema" width="80">
-        <p>Here's a little something about me.</p>
+	<head>
+		<meta charset="UTF-8">
+			<title>Aukje's Bio</title>
+				<meta charset="UTF-8">
+					<!-- <title>Bootstrap Components</title> -->
+					<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <link rel="stylesheet" type="text/css" href="style_bio.css">
+  </head>
+  <body>
+    <header>
+      <h1>Aukje Rijpkema - Bio</h1>   
+    </header>
+    <div id="box2">
+    </div>
+      <section id="bio-image">
+        <img src="Profile Picture.jpg" alt="Aukje Vestjens-Rijpkema" width="150">
       </section>
-      <p>I'm just learning all about this html.</p>
-      <table>
-        <table border="2">
-        <tr>
-          <th>Books</th>
-          <th>Movies</th>
-          <th>Games</th>
-        </tr>
-        <tr>
-          <td>Pride and Prejudice</td>
-          <td>Wuthering Heights</td>
-          <td>The Red Tent</td>
-        </tr>
-        <tr>
-          <td>Mr. Bean</td>
-          <td>A few good men</td>
-          <td>Bridget Jones' Diary</td>
-        </tr>
-        <tr>
-          <td>Sudoko</td>
-          <td>Solitaire</td>
-          <td>Black Jack</td>
-        </tr>
-      </table>
-    </section>
-
-    <aside id="contact-info">
-      <h2>Contact Info</h2>
-        <ul>
-          <h3>
-          <li><strong>Email:</strong> <a href="#">avestjens@yahoo.com</a></li>
-          <li><strong>Github:</strong> <a href="#">DutchDS</a></li>
-          <li><strong>Twitter:</strong> <a href="#">@avestjens_aukje</a></li>
-          </h3>      
-        </ul>
-      <h2>Also checkout my LinkedIn page:</h2>
-        <ul>
-          <h3>
-            <li><strong>LinkedIn : </strong><a href="https://www.linkedin.com/in/aukje-vestjens-rijpkema/" target="_blank">Aukje Rijpkema</a></li>
-          </h3>
-        </ul>
-      <h2>Or visit my LLC:</h2>
-        <ul>
-          <h3>
-            <li><strong>Link: </strong><a href="http://dutchdatasmarts.com" target="_blank">Dutch Data Smarts, LLC</a></li>
-          </h3>
-        </ul>
-    </aside>
-  </main>
-
-  
-    
-</body>
-
+        <!-- <main class="container"> -->
+      <div class="row">
+        <div class="col-lg-8 col-xs-12">
+          <section id="main_bio">
+   
+              <br>
+              <p>This page started out as a homework assignment</p>
+              <p>Why not use it as a starting point for sharing homework assignments besides GitHub?</p>
+              <p>I'll keep adding/adjusting/improving as the program progresses</p>
+              <br>
+              <font size="3" line-height=1.2>
+              <table class="table table-striped" >
+              <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Link</th>
+              </tr>
+              <tr>
+                <td>Week 6</td>
+                <td>Python - Pandas - API's</td>
+                <td><a class="btn btn-danger" href="https://github.com/DutchDS/Python_API_Challenge/blob/master/WeatherPy/WeatherPy.ipynb" role="button" target="_blank">Python Script</a></td>
+              </tr>
+              <tr>
+                <td>Week 8</td>
+                <td>Python Project</td>
+                <td><a class="btn btn-danger" href="https://drive.google.com/open?id=1JN0uffdd04kZrvMfhffRP0-x99dPscyGWxrID8FRHWE" role="button" target="_blank">Presentation</a></td>
+              </tr>
+              <tr>
+                <td>Week 11</td>
+                <td>Weather Analyis - HTML Challenge</td>
+                <td><a class="btn btn-danger" href="WebVisualizations/landing.html" role="button" target="_blank">Weather Page</a></td>
+              </tr>
+            </table></font>
+          </section>
+        </div>
+        <div class="col-lg-4 col-xs-12">
+          <br>
+          <div id="box1">
+          <p><strong>Contact Info:</strong></p>
+            <ul><h2>
+              <li>
+                Email: <a href="#">avestjens@yahoo.com</a>
+              </li>
+              <li>
+                Github: <a href="#">DutchDS</a>
+              </li>
+              <li>
+                Twitter: <a href="#">@avestjens_aukje</a>
+              </li>
+              <li>
+                LinkedIn : </strong><a href="https://www.linkedin.com/in/aukje-vestjens-rijpkema/" target="_blank">Aukje Rijpkema</a>
+              </li>
+              </ul></h2>
+            <p><strong>Or visit my business page: </strong></p>
+            <ul><h2>
+                <li>
+                  Link: <a href="http://dutchdatasmarts.com" target="_blank">Dutch Data Smarts, LLC</a>
+                </li></h2>
+            </ul>
+          </div>
+        </div>
+      </div class="row">
+    </main>
+  </body>
 </html>
