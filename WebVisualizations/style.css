@@ -74,7 +74,6 @@ p {
 #img_viz {
   text-align: center;
 }
-
 /* ****************************************************************** */
 /* Navigation bar settings: */
 /* ****************************************************************** */
@@ -106,6 +105,11 @@ p {
   color:  #efeee7;
 }
 
+.navbar-toggler,
+.navbar-toggler-icon {
+    color: #efeee7;
+    background-color: rgb(149, 180, 211);
+}
 #lat_image {
     float: left;
 }
@@ -139,6 +143,12 @@ p {
 .bg_medium,
 .navbar-light {
   background-color: seagreen;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+    color: #efeee7;
+    background-color: lightgreen;
 }
 
 h3,
