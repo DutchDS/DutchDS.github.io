@@ -1,0 +1,21 @@
+body { 
+    background-color: black; 
+}
+
+.card { 
+    background-color: black; 
+    color:whitesmoke; 
+    border: 2px solid whitesmoke
+}
+
+.jumbotron { 
+    background-image: url("https://i.ytimg.com/vi/QUpWCRadIIA/maxresdefault.jpg");
+}
+
+h1, h2, h3, h4, h5, h6, tr {
+    color: whitesmoke;
+}
+
+i {
+    color: whitesmoke
+}
