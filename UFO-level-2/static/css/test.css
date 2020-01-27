@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(6, 28, 41);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+}
+
+.navbar {
+    background-color: rgb(6, 28, 41);
+    color: white
+}
+
+.nav-link {
+    color:lightblue;
+}
+
+.btn,
+button {
+    color:lightblue;
+    /* background-color: white; */
+}
+
+.btn-outline-success {
+    border-color: lightblue;
+    
+}
+
+.btn-primary {
+    background-color:  rgb(6, 28, 41);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #f7339e;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+#table-area,
+.navbar-brand {
+    color:white;
+}
+
+h1 {
+    color: white;
+}
+
+#lat-img {
+    background-image: url("static/images/NY_Cool.jpg");
+}
+
+.m-top-175 {
+    margin-top: 30%;
+    margin-bottom: 100%;
+  }
+
+.m-top-75 {
+    margin-top: 75px;
+    background-color:rgb(6, 28, 41) ;
+    opacity: 75%;
+    color: white;
+  }
+
+  #selectDate, #selectCity, #selectCountry, #selectState, #selectShape {
+      background-color: lightblue;
+      color: black;
+      margin: 5px;
+  }
