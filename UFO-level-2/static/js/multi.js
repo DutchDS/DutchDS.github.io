@@ -121,7 +121,6 @@ function load_select(myId, myField) {
     if (myField == "Shape") {var filteredData = tableData.filter(tableData => {return tableData.shape == inputValue});};
 
     console.log("CHECK" + myField);
-  
     console.log(filteredData);
   
     // Fill tbody with filteredData
