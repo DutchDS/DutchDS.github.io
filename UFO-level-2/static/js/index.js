@@ -3,7 +3,7 @@
 var submit_all = d3.select("#submit-all");
 var get_all = d3.select("#get-all");
 var tableData = data;
-var inputValue = d3.select("datetime-form-input")
+var inputValue = d3.select("#datetime-form-input")
 
 
 // Load initial results

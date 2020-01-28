@@ -2,8 +2,11 @@
 //##################################
 var submit_all = d3.select("#submit-all");
 var get_all = d3.select("#get-all");
-var get_state = d3.select("#selectState");
+var get_date = d3.select("#selectDate");
 var get_city = d3.select("#selectCity");
+var get_state = d3.select("#selectState");
+var get_country = d3.select("#selectCountry");
+var get_shape = d3.select("#selectShape");
 var tableData = data;
 
 // Load initial results
@@ -93,26 +96,32 @@ loadDropDowns("#selectState",shortStates,"Select State");
 loadDropDowns("#selectCountry",shortCountries,"Select Country");
 loadDropDowns("#selectShape",shortShapes,"Select Shape");
 
+
+get_date.on("click", function() {load_select("#selectDate", "Date")});
+get_city.on("click", function() {load_select("#selectCity", "City")});
+get_state.on("click", function() {load_select("#selectState", "State")});
+get_country.on("click", function() {load_select("#selectCountry", "Country")});
+get_shape.on("click", function() {load_select("#selectShape", "Shape")});
+
+
 // Lastly Filter result set when a filter is chosen from the dropdownboxes
-  function load_select(myId,myField) {
-    d3.event.preventDefault();
+function load_select(myId, myField) {
+      // d3.event.preventDefault();
 
-    var inputElement = d3.select(myId);
-    console.log(inputElement);
+      var inputElement = d3.select(myId);
+      console.log(inputElement);
+    
+      var inputValue = inputElement.property("value");
+      console.log(inputValue);
   
-    var inputValue = inputElement.property("value");
-    console.log(inputValue);
-  
-    // if (!inputValue) {inputValue = '1/1/2010';}
-  
-  
-    var filteredData = tableData.filter(tableData => {
-          // if (myField = "State") {
-          // return tableData.state == inputValue};
-          if (myField = "City") {
-          return tableData.city == inputValue};  
-          });
+    if (myField == "Date") {var filteredData = tableData.filter(tableData => {return tableData.datetime == inputValue});};
+    if (myField == "City") {var filteredData = tableData.filter(tableData => {return tableData.city == inputValue});};
+    if (myField == "State") {var filteredData = tableData.filter(tableData => {return tableData.state == inputValue});}
+    if (myField == "Country") {var filteredData = tableData.filter(tableData => {return tableData.country == inputValue});};
+    if (myField == "Shape") {var filteredData = tableData.filter(tableData => {return tableData.shape == inputValue});};
 
+    console.log("CHECK" + myField);
+  
     console.log(filteredData);
   
     // Fill tbody with filteredData
@@ -131,15 +140,3 @@ loadDropDowns("#selectShape",shortShapes,"Select Shape");
       });
 
   }
-
-get_state.on("click", function() {load_select("#selectState", "State")});
-get_city.on("click", function() {load_select("#selectCity", "City")});
-
-  // Define what to do when 'get all sightings' date is clicked
-//###########################################################
-// get_all.on("click", function() {load_all()});
-
-  
-// Define what to do when 'search for specific date' is clicked
-// #################################################################
-// submit_all.on("click", function() {load_select()});
