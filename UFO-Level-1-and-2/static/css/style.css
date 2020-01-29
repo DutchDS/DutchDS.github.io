@@ -84,10 +84,11 @@ h1 {
   }
   
   
-  @media(max-width: 769px) {
+  @media(max-width: 780px) {
 
 
   .table {
       table-layout: auto;
       width: 100%;}
   }
+

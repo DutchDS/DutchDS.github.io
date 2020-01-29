@@ -8,7 +8,7 @@
   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/test.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <title>UFO Sightings</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -21,34 +21,26 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index_multi.html">
-              <button id="get-all" type="submit" class="btn btn-primary btn-outline-success">Multiple Selections</button>
-            </a>
-          </li>
-        </ul>
-        
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="index_all.html">
-              <button id="get-all" type="submit" class="btn btn-primary btn-outline-success">Get all Sightings!</button>
+              <button id="get-all" type="submit" class="btn btn-primary btn-outline-success">UFO Sightings Level 1: Get All or by Date</button>
             </a>
           </li>
         </ul>
-
-        <form class="navbar-form form-inline" action="index_all.html">
-            <!-- <div class="form-group">
-              <input class="form-control mr-sm-2" id="datetime-form-input" type="text" placeholder="1/1/2010" name="date-form">
-            </div> -->
-            <a class="nav-link" href="index_all.html">
-              <button id="submit-all" type="submit" class="btn btn-primary btn-outline-success">Search for Specific Date</button>
-            </a>
-        </form>
       </div>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index_multi.html">
+              <button id="get-all" type="submit" class="btn btn-primary btn-outline-success">UFO Sightings Level 2: Multiple Selections</button>
+            </a>
+          </li>
+        </ul>
+      </div>  
+
     </nav>
 
     <div class="container">
@@ -68,5 +60,4 @@
   </div>
 </body>
 <script src="static/js/data.js"></script>
-<!-- <script src="static/js/index.js"></script> -->
 </html>
