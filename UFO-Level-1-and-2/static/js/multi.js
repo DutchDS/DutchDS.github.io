@@ -8,15 +8,17 @@ var get_city = d3.select("#selectCity");
 var get_state = d3.select("#selectState");
 var get_country = d3.select("#selectCountry");
 var get_shape = d3.select("#selectShape");
+var get_all = d3.select("#selectAll");
 var tableData = data;
 var filteredData = [];
 
 // Load initial results
 // ####################
 load_all()
+
 function load_all() {
     var tbody = d3.select("tbody");
-    
+    var tableData = data;
     tbody.html(" ");
   
     console.log(tableData);
@@ -144,6 +146,8 @@ get_city.on("change", function() {load_select("#selectCity", "City")});
 get_state.on("change", function() {load_select("#selectState", "State")});
 get_country.on("change", function() {load_select("#selectCountry", "Country")});
 get_shape.on("change", function() {load_select("#selectShape", "Shape")});
+get_all.on("click", function() {location.reload()});
+
 // get_all.on("click", function() {
 //   console.log("Reset was clicked");
 //   load_all()});
