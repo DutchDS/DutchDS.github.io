@@ -18,9 +18,9 @@
   <div style="background-image:url(static/images/NY_Cool.jpg); background-attachment: fixed; background-size: cover">
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="index.html">UFO Sightings</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
     
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
@@ -41,9 +41,12 @@
         </ul>
 
         <form class="navbar-form form-inline" action="index_all.html">
-            <div class="form-group">
-              <input class="form-control mr-sm-2" id="datetime-form-input" type="text" placeholder="1/1/2010" name="date-form">
-            </div>
+            <!-- <div class="form-group"> -->
+              <!-- <input class="form-control mr-sm-2" id="datetime-form-input" type="text" placeholder="1/1/2010" name="date-form"> -->
+              <!-- <input class="form-control mr-sm-2" id="datetime-form-input" type="text" name="date-form"> -->
+              <select class="form-control" id="selectDate" name="select-date-from-list">
+              </select>
+            <!-- </div> -->
             <a class="nav-link" href="index_all.html">
               <button id="submit-all" type="submit" class="btn btn-primary btn-outline-success">Search for Specific Date</button>
             </a>
@@ -70,7 +73,7 @@
                     <th class="table-head">Country</th>
                     <th class="table-head">Shape</th>
                     <th class="table-head">Duration</th>
-                    <th class="table-head">Comments</th>
+                    <th class="table-head" id="table-comment">Comments</th>
                   </tr>
                 </thead>
                 <tbody></tbody>

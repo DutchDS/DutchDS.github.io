@@ -1,13 +1,15 @@
 // Get a reference to the page tags
 //##################################
 var submit_all = d3.select("#submit-all");
-var get_all = d3.select("#get-all");
+// var get_all = d3.select(".get-all");
+// var get_reset = d3.select(".get-reset")
 var get_date = d3.select("#selectDate");
 var get_city = d3.select("#selectCity");
 var get_state = d3.select("#selectState");
 var get_country = d3.select("#selectCountry");
 var get_shape = d3.select("#selectShape");
 var tableData = data;
+var filteredData = [];
 
 // Load initial results
 // ####################
@@ -43,9 +45,9 @@ tableData.forEach((r) => {
   listStates.push(r.state);
   listCountries.push(r.country);
   listShapes.push(r.shape)
-})
+});
 
-// Go through each list and create a short list by removing duplicates
+// Function to go through each list and create a short list by removing duplicates
 function uniqueValues(myList) {
     var longList = myList;
     var shortList = [];
@@ -61,11 +63,12 @@ function uniqueValues(myList) {
     return shortList;
   }
 
+// Call functions and sort results
 shortDates = uniqueValues(listDates);
-shortCities = uniqueValues(listCities);
-shortStates = uniqueValues(listStates);
-shortCountries = uniqueValues(listCountries);
-shortShapes = uniqueValues(listShapes);
+shortCities = uniqueValues(listCities).sort();
+shortStates = uniqueValues(listStates).sort();
+shortCountries = uniqueValues(listCountries).sort();
+shortShapes = uniqueValues(listShapes).sort();
 
 console.log(shortDates);
 console.log(shortCities);
@@ -90,21 +93,15 @@ function loadDropDowns(myId, myshortList, myText) {
   
       });
     };
+
+// Fill dropdowns with shortLists
 loadDropDowns("#selectDate",shortDates,"Select Date");
 loadDropDowns("#selectCity",shortCities,"Select City");
 loadDropDowns("#selectState",shortStates,"Select State");
 loadDropDowns("#selectCountry",shortCountries,"Select Country");
 loadDropDowns("#selectShape",shortShapes,"Select Shape");
 
-
-get_date.on("click", function() {load_select("#selectDate", "Date")});
-get_city.on("click", function() {load_select("#selectCity", "City")});
-get_state.on("click", function() {load_select("#selectState", "State")});
-get_country.on("click", function() {load_select("#selectCountry", "Country")});
-get_shape.on("click", function() {load_select("#selectShape", "Shape")});
-
-
-// Lastly Filter result set when a filter is chosen from the dropdownboxes
+// Lastly define what filter to apply to remaining dataset after chosing value from dropdownboxes
 function load_select(myId, myField) {
       // d3.event.preventDefault();
 
@@ -113,7 +110,7 @@ function load_select(myId, myField) {
     
       var inputValue = inputElement.property("value");
       console.log(inputValue);
-  
+
     if (myField == "Date") {var filteredData = tableData.filter(tableData => {return tableData.datetime == inputValue});};
     if (myField == "City") {var filteredData = tableData.filter(tableData => {return tableData.city == inputValue});};
     if (myField == "State") {var filteredData = tableData.filter(tableData => {return tableData.state == inputValue});}
@@ -121,8 +118,10 @@ function load_select(myId, myField) {
     if (myField == "Shape") {var filteredData = tableData.filter(tableData => {return tableData.shape == inputValue});};
 
     console.log("CHECK" + myField);
-    console.log(filteredData);
   
+    console.log(filteredData);
+    tableData = filteredData;
+
     // Fill tbody with filteredData
     //###############################################################
     var tbody = d3.select("tbody");
@@ -137,5 +136,18 @@ function load_select(myId, myField) {
           cell.text(value);
         });
       });
+    }
 
-  }
+    // Define what to do when value is selected/changed
+get_date.on("change", function() {load_select("#selectDate", "Date")});
+get_city.on("change", function() {load_select("#selectCity", "City")});
+get_state.on("change", function() {load_select("#selectState", "State")});
+get_country.on("change", function() {load_select("#selectCountry", "Country")});
+get_shape.on("change", function() {load_select("#selectShape", "Shape")});
+// get_all.on("click", function() {
+//   console.log("Reset was clicked");
+//   load_all()});
+
+// get_reset.on("click", function() {
+//   console.log("Reset was clicked");
+//   load_all()});
