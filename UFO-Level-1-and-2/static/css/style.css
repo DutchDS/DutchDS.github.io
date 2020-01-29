@@ -77,7 +77,7 @@ h1 {
 
 #table-comment{width: 50%}
 
-  #selectDate, #selectCity, #selectCountry, #selectState, #selectShape, #datetime-form-input, #selectAll {
+#selectDate, #selectCity, #selectCountry, #selectState, #selectShape, #datetime-form-input, #selectAll {
       background-color: lightblue;
       color: black;
       margin: 5px;
@@ -92,3 +92,11 @@ h1 {
       width: 100%;}
   }
 
+  body {
+
+        background-color: rgb(6, 28, 41);
+  }
+
+  style {
+        background-image: none;
+  }
