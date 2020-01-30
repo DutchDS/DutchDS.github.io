@@ -48,6 +48,11 @@ button {
 
 h1 {
     color: white;
+    font-size: 36px;
+}
+
+h2 {
+    color: white;
     font-size: 48px;
     letter-spacing: 3px;
 }
@@ -101,7 +106,7 @@ h1 {
         background-image: url();
     }
 
-    html {zoom: 46%;}
+    html {zoom: 50%;}
 
   /* .style {
         background-attachment: unset;
@@ -113,6 +118,14 @@ h1 {
   .m-top-175 {
     margin-top: 50%;
     margin-bottom: 100%;
+  }
+
+  
+ .m-top-75 {
+    margin-top: 150px;
+    background-color:rgb(6, 28, 41) ;
+    opacity: 75%;
+    color: white;
   }
 
   #selectAll {
