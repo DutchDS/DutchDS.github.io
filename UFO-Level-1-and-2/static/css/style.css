@@ -1,7 +1,6 @@
-body {
+html, body {
     background-color: rgb(6, 28, 41);
     background-repeat: no-repeat;
-    /* background-size: 100%; */
     width: 100%;
 }
 
@@ -99,6 +98,7 @@ body {
     width: 780px;
   }
 
+  html {zoom: 48%;}
   /* style {
         background-attachment: unset;
         background-size: unset;
