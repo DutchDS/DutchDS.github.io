@@ -92,7 +92,7 @@ h1 {
   .table {
       table-layout: auto;
       width: 100%;}
-  }
+ 
 
   body {
 
@@ -107,3 +107,4 @@ h1 {
     margin-top: 50%;
     margin-bottom: 100%;
   }
+}
