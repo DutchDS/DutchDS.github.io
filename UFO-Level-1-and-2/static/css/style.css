@@ -86,7 +86,7 @@ h1 {
   }
   
   
-  @media(max-width: 780px) {
+@media(max-width: 780px) {
 
 
   .table {
@@ -97,6 +97,7 @@ h1 {
   body {
 
         background-color: rgb(6, 28, 41);
+        background-image: none;
   }
 
   style {
