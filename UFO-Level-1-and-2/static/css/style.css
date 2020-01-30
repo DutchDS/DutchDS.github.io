@@ -47,6 +47,7 @@ button {
 
 h1 {
     color: white;
+    font-size: 48px;
 }
 
 #lat-img {
@@ -99,4 +100,9 @@ h1 {
 
   style {
         background-image: none;
+  }
+
+  .m-top-175 {
+    margin-top: 40%;
+    margin-bottom: 100%;
   }

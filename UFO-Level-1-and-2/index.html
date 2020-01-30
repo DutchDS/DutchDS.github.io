@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="static/css/style.css">
 
     <title>UFO Sightings</title>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
@@ -48,9 +49,22 @@
               <!-- <img width=100% id="lat-image" src="static/images/NY_Cool.jpg"> -->
               <div class="panel m-top-175">
                 <div class="panel-body">
-                  <h1 class="text-center">The truth is out there!!!</h1>
+                  <h1 class="data text-center">The truth is out there!!!</h1>
                 </div>
               </div>
+
+              <script type="text/javascript">
+    
+                const text = baffle(".data")
+                text.set({
+                    characters: '▒>/ ▓▓/█> ▒▒▓▒▓ ░▓▓ █▒▒▒█ █▒▒█ █▒░▒ ░▒▓ █▒<░ ░█░░░▓▓ █▒▒▒█ █▒░▒ ░▒▓ █▒<░ ░█░░',
+                    speed: 75
+                })
+            
+                text.start()
+                text.reveal(4000);
+            
+                </script>
           <!-- </section> -->
         </div>
       </div>
