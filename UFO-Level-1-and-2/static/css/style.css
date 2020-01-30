@@ -30,6 +30,7 @@ button {
     
 }
 
+
 .btn-primary {
     background-color:  rgb(6, 28, 41);
 }
@@ -75,7 +76,8 @@ h1 {
    width: auto;
 }
 
-.table{table-layout:fixed;}
+.table  {
+    table-layout:fixed;}
 
 #table-comment{width: 50%}
 
@@ -94,13 +96,14 @@ h1 {
       width: 100%;}
  
 
-body {
-    width: 780px;
-  }
+    body {
+        width: 780px;
+        background-image: url();
+    }
 
-  html {zoom: 50%;}
+    html {zoom: 46%;}
 
-  /* style {
+  /* .style {
         background-attachment: unset;
         background-size: unset;
         background-image: url();
@@ -111,4 +114,19 @@ body {
     margin-top: 50%;
     margin-bottom: 100%;
   }
+
+  #selectAll {
+        border-color: lightblue;
+        color: white;
+        background-color: rgb(6, 28, 41);
+    }
+  
+
+   .navbar {
+    background-color: rgb(45, 77, 95);
+    color: white;
+    width: auto;
+}
+
+
 }
