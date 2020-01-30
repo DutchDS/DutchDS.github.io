@@ -2,6 +2,7 @@ body {
     background-color: rgb(6, 28, 41);
     background-repeat: no-repeat;
     /* background-size: 100%; */
+    width: 100%;
 }
 
 .navbar {
@@ -86,7 +87,7 @@ h1 {
   }
   
   
-@media(max-width: 780px) {
+  @media(max-width: 780px) {
 
 
   .table {
@@ -94,15 +95,16 @@ h1 {
       width: 100%;}
  
 
-  body {
+body {
+    width: 780px;
+  }
 
+  /* style {
+        background-attachment: unset;
+        background-size: unset;
+        background-image: url();
         background-color: rgb(6, 28, 41);
-        background-image: none;
-  }
-
-  style {
-        background-image: none;
-  }
+  } */
 
   .m-top-175 {
     margin-top: 50%;
