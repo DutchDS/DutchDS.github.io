@@ -44,10 +44,15 @@ button {
     border-color: #285e8e; /*set the color you want here*/
 }
 
-#table-area,
+#table-area {
+    color: white;
+    zoom: 100%';
+}
+
 .navbar-brand {
     color:white;
 }
+
 
 h1 {
     color: white;
@@ -84,8 +89,8 @@ h2 {
    width: auto;
 }
 
-.table  {
-    table-layout:fixed;}
+/* .table  {
+    table-layout:fixed;} */
 
 #table-comment{width: 50%}
 
