@@ -37,10 +37,11 @@ function loadDropDown(myId, myList) {
           console.log(f);
           var cell = inputField.append("option")
           cell.text(f);
-
-          optionChanged();
       
           });
+
+        optionChanged();  
+    
         };
 
 // Return an array of meta data about tested individual
@@ -59,8 +60,9 @@ function getSampleData (selectId) {
 // Fill Barchart with top 10 UTO's that were found in selected individual by running getSampleDta
 // Lastly create 3 different charts by running createBar, createBubble, createGauge
 function optionChanged() {
-    let choosenId = d3.select("#selDataset").property("value");
-    console.log(choosenId);
+    
+  let choosenId = d3.select("#selDataset").property("value");
+  console.log(choosenId);
 
     outputMetaData = getMetaData(choosenId);
     console.log("MetaData");
