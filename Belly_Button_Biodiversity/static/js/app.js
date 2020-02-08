@@ -37,6 +37,8 @@ function loadDropDown(myId, myList) {
           console.log(f);
           var cell = inputField.append("option")
           cell.text(f);
+
+          optionChanged();
       
           });
         };
