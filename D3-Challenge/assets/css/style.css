@@ -1,0 +1,82 @@
+html {
+  /* background: url(../images/smoke1.jpg) no-repeat center center fixed;  */
+  background-color: rgba(179, 86, 86, 0.8);
+  background-size: cover;
+}
+.iframeContainer {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+}
+
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Padding bottom by footer height */
+  opacity: 100%;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  background-color: #e0e1e2;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  padding: 2px;
+  padding-top: 8px;
+  font: 12px sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background:  rgba(177, 0, 0, 0.8);
+  border: 0;
+  border-radius: 10px;
+}
+
+.article {
+  padding: 50px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.chart::before {
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  z-index: -1;
+  display: block;
+  width: 400px;
+  height: 300px;
+  content: " ";
+  /* background-image: url("maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover; */
+  opacity: 0.3;
+}
